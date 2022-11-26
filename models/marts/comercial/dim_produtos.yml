@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Tabela dimensão de produtos.
+    columns:
+      - name: sk_produto
+        description: Chave primária da tabela de produtos.
+        tests:
+          - unique
+          - not_null

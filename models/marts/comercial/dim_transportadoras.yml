@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_transportadoras
+    description: Tabela dimensão de transportadoras.
+    columns:
+      - name: sk_transportadora
+        description: Chave primária da tabela de transportadoras.
+        tests:
+          - unique
+          - not_null

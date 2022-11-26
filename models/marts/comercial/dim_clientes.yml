@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: Tabela dimensão de clientes.
+    columns:
+      - name: sk_cliente
+        description: Chave primária da tabela de clientes.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: Chave natural de identificação do cliente.
+      
+      - name: nome_do_cliente
+        description: Nome do cliente.
+      
+      - name: titulo_de_cortesia
+        description: Pronome de tratamento usado com o cliente.
+      
+      - name: nome_da_empresa
+        description: Nome da empresa do cliente.
+      
+      - name: endereco
+        description: Endereco do cliente.
+      
+      - name: cep
+        description: Codigo postal do cliente.
+      
+      - name: cidade
+        description: Cidade do cliente.
+      
+      - name: regiao
+        description: Regiao do cliente.
+      
+      - name: pais
+        description: Pais do cliente.
+      
+      - name: fax
+        description: Numero de fax do cliente.
+      
+      - name: telefone
+        description: Numero de telefone do cliente.
